@@ -67,7 +67,8 @@ class _AddToWalletButtonState extends State<AddToWalletButton> {
           creationParamsCodec: const StandardMessageCodec(),
         );
       default:
-        if (widget.unsupportedPlatformChild == null) throw UnsupportedError('Unsupported platform view');
+        if (widget.unsupportedPlatformChild == null)
+          throw UnsupportedError('Unsupported platform view');
         return widget.unsupportedPlatformChild!;
     }
   }
